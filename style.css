@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e1e4e8;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2d3748;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background-color: #ffffff;
+    color: #2d3748;
+}
+
+.input-field label {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #718096;
+    transition: all 0.3s;
+    pointer-events: none;
+    background-color: #ffffff;
+    padding: 0 0.25rem;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+}
+
+.input-field input:focus + label,
+.input-field input:valid + label {
+    top: 0;
+    font-size: 0.875rem;
+    color: #3b82f6;
+    background-color: #ffffff;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.acc-text {
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.acc-text span {
+    color: #3b82f6;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.acc-text span:hover {
+    text-decoration: underline;
+    color: #2563eb;
+}
+
+.input-field input:focus {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.2);
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.input-field.error input {
+    border-color: #ef4444;
+}
+
+.input-field.error label {
+    color: #ef4444;
+}
+
+.input-field.success input {
+    border-color: #3b82f6;
+}
+
+.loading {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #3b82f6;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-left: 0.5rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #718096;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: #3b82f6;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.admin-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.admin-actions .btn {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.admin-actions .btn:hover {
+    background-color: #d1d5db;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background-color: #ffffff;
+    color: #2d3748;
+}
+
+.header h1 {
+    color: #2d3748;
+}
+
+.role-badge {
+    background-color: #3b82f6;
+}
+
+.form-group input {
+    background-color: #ffffff;
+    color: #2d3748;
+    border-color: #e1e4e8;
+}
+
+.form-group input:focus {
+    border-color: #3b82f6;
+}
+
+.admin-section {
+    border-top: 1px solid #e1e4e8;
+}
+
+.admin-section h2 {
+    color: #2d3748;
+}
+
+.admin-section button {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.admin-section button:hover {
+    background-color: #d1d5db;
+}
